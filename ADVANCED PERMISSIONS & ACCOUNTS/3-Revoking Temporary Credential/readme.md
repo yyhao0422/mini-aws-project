@@ -5,7 +5,7 @@ Temperary credential is given to user. If the temperory credential of any user i
 You will ask why not we just delete the role or changing the role? The answer is Yes , we can do that but it is not the best solution. 
 You might affect other users that assuming the role and no doubt that it is admin overhead. To solve this problem, we can implement revoke 
 temporary credential by placing a inline policy that deny all sessions older than now. The user can then assume the role again with sts:assumerole and get a new temp credential. However, the bad actor cannot access it because of the explicit deny and he also cannot assume the role because he is not in the trust policy. Below is the architecture diagram:
-![architecture-diagram - PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20PERMISSIONS%20%26%20ACCOUNTS/3-Revoking%20Temporary%20Credential/images/architecture-diagram.png)
+![architecture-diagram - PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20PERMISSIONS%20%26%20ACCOUNTS/3-Revoking%20Temporary%20Credential/images/Architecture-Diagram.png)
 
 # Lets Begin!
 - Create the environment using Cloud Formation. ![Click here](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0038-aws-pro-revoking-temporary-credentials/A4LHostingInc.yaml&stackName=A4L)
