@@ -9,7 +9,7 @@ temporary credential by placing a inline policy that deny all sessions older tha
 ![architecture-diagram - PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20PERMISSIONS%20%26%20ACCOUNTS/3-Revoking%20Temporary%20Credential/images/Architecture-Diagram.png)
 
 # Lets Begin!
-- Create the environment using Cloud Formation. ![Click here](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0038-aws-pro-revoking-temporary-credentials/A4LHostingInc.yaml&stackName=A4L)
+- Create the environment using Cloud Formation. [Click here](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0038-aws-pro-revoking-temporary-credentials/A4LHostingInc.yaml&stackName=A4L)
 ![1 - PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20PERMISSIONS%20%26%20ACCOUNTS/3-Revoking%20Temporary%20Credential/images/1.png)
 - Connect to the Instance A (Act as an invader)
 ![2 - PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20PERMISSIONS%20%26%20ACCOUNTS/3-Revoking%20Temporary%20Credential/images/2.png)
