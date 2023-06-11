@@ -1,7 +1,7 @@
 # Demo - Using Workspaces with AWS Directory Service
 
 This is the architecture that I am going to implement:
-![1 -PNG]()
+![1 -PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/1.png)
 
 What we will do is:
 
@@ -15,7 +15,7 @@ What we will do is:
 Make sure my account is in IAM admin in management account 
 [CLICK HERE](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/create/review?templateURL=https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0029-aws-mixed-workspaces-simple-demo/vpc_with_natgw.yaml&stackName=A4LVPC) to go in the cloud formation stack and create it.
 - Wait the stack in complete status, then we will proceed. 
-![2 -PNG]()
+![2 -PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/2.png)
 
 # Step 2 : Create a simple AD
 
@@ -24,11 +24,11 @@ Make sure my account is in IAM admin in management account
 - You will need to select directory type.
 - In this demo, I will select `simple AD` . It is a Linux-Samba Active Directory-compatible server. If you want a native Microsoft Active Direcotry then you might want to choose AD connector or AWS Managed Microsoft AD.
 - Click on next to proceed
-![3 -PNG]()
+![3 -PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/3.png)
 
 - At the VPC section, make sure to pick `a4l-vpc`.
 - In the subnet section, pick `appaA` and `appB`
-![4 -PNG]()
+![4 -PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/4.png)
 
 - Configure all the setting and create the simple AD.
 
@@ -48,11 +48,11 @@ Make sure my account is in IAM admin in management account
 - Open it and fill all the credential.
 - Follow the instruction and download Amazon workspace client
 - Sign in the username and password .
-![5 -PNG]()
+![5 -PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/5.png)
 - It might take a little bit longer when you first sign in the workspace
-![6- PNG]()
+![6- PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/6.png)
 - Congrat we have made our own workspace successfully and it also have connectivity without setting up any infrastruture.
-![7- PNG]()
+![7- PNG](https://github.com/yyhao0422/aws-project/blob/master/ADVANCED%20IDENTITIES%20%26%20FEDERATION/3-%20Using%20workspaces%20with%20an%20AWS%20Directory%20Service/images/7.png)
 - Note that We can also use in different OS device or even in web-based client.
 
 # DONE!!
